@@ -3,40 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malla Curricular Interactiva</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Malla Curricular Ingeniería Industrial</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <h1>Malla Curricular Interactiva</h1>
-
-  <div class="semester">
-    <h2>Semestre 1</h2>
-    <div class="course" data-code="calculo1">Cálculo I</div>
-    <div class="course" data-code="algebra1">Álgebra I</div>
-    <div class="course" data-code="introprog">Introducción a la Programación</div>
-  </div>
-
-  <div class="semester">
-    <h2>Semestre 2</h2>
-    <div class="course" data-code="calculo2" data-prereqs="calculo1">Cálculo II</div>
-    <div class="course" data-code="algebra2" data-prereqs="algebra1">Álgebra II</div>
-    <div class="course" data-code="estructuras" data-prereqs="introprog">Estructura de Datos</div>
-  </div>
-
-  <div class="semester">
-    <h2>Semestre 3</h2>
-    <div class="course" data-code="calculo3" data-prereqs="calculo2">Cálculo III</div>
-    <div class="course" data-code="ecuaciones" data-prereqs="calculo2,algebra2">Ecuaciones Diferenciales</div>
-    <div class="course" data-code="oop" data-prereqs="estructuras">Programación Orientada a Objetos</div>
-  </div>
-
-  <div class="semester">
-    <h2>Semestre 4</h2>
-    <div class="course" data-code="analisis" data-prereqs="calculo3">Análisis Numérico</div>
-    <div class="course" data-code="basesdatos" data-prereqs="estructuras">Bases de Datos</div>
-    <div class="course" data-code="compiladores" data-prereqs="oop">Compiladores</div>
-  </div>
-
+  <h1>Malla Curricular Ingeniería Industrial</h1>
+  <div id="grid"></div>
   <script src="script.js"></script>
 </body>
 </html>
