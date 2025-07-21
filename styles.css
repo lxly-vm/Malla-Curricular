@@ -1,48 +1,55 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
-  padding: 20px;
+  margin: 20px;
+  background-color: #fdfdfd;
   color: #333;
 }
 
 h1 {
   text-align: center;
+  color: #a83c5f;
   margin-bottom: 30px;
 }
 
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .semester {
-  margin-bottom: 40px;
+  border: 2px solid #f1ced4;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: #fff4f6;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .semester h2 {
-  color: #d96a84;
-  background-color: #f1ced4;
-  padding: 10px;
-  border-radius: 8px;
+  color: #d45b7d;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .course {
-  display: inline-block;
-  margin: 10px;
-  padding: 15px 20px;
-  background-color: #f1ced4;
+  padding: 6px 10px;
+  margin: 6px 0;
   border-radius: 10px;
+  background-color: #ffe9ef;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
-  border: 2px solid transparent;
+  transition: background-color 0.2s ease;
+  border: 1px solid #f1ced4;
+  font-size: 14px;
 }
 
 .course:hover {
-  background-color: #e8b8c2;
+  background-color: #fcdde6;
 }
 
 .course.approved {
-  background-color: #c7f3c7;
-  border-color: #59b659;
-}
-
-.course.disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
+  background-color: #c6e8d5;
+  border-color: #5dbb89;
+  color: #2e5c45;
+  font-weight: bold;
 }
