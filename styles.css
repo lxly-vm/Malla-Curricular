@@ -1,69 +1,48 @@
 body {
   font-family: Arial, sans-serif;
-  background: #fff;
-  margin: 0;
+  background-color: #fff;
   padding: 20px;
   color: #333;
 }
 
 h1 {
   text-align: center;
-  color: #D46A8D;
+  margin-bottom: 30px;
 }
 
-#malla {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.semester {
+  margin-bottom: 40px;
 }
 
-.semestre {
-  background: #fdf6f8;
-  padding: 15px;
-  border: 2px solid #F1CED4;
-  border-radius: 12px;
-}
-
-.semestre h2 {
-  margin-top: 0;
-  color: #D46A8D;
-  font-size: 1.2em;
-  text-align: center;
-}
-
-.cursos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.curso {
-  background: #F1CED4;
-  border: 2px solid #D46A8D;
+.semester h2 {
+  color: #d96a84;
+  background-color: #f1ced4;
   padding: 10px;
+  border-radius: 8px;
+}
+
+.course {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 20px;
+  background-color: #f1ced4;
   border-radius: 10px;
   cursor: pointer;
-  opacity: 0.5;
-  transition: all 0.3s ease-in-out;
-  user-select: none;
-  text-align: center;
-  width: 180px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  border: 2px solid transparent;
 }
 
-.curso.habilitado {
-  opacity: 1;
+.course:hover {
+  background-color: #e8b8c2;
 }
 
-.curso.aprobado {
-  background: #D46A8D;
-  color: white;
-  border-color: #B94D6B;
-  text-decoration: line-through;
+.course.approved {
+  background-color: #c7f3c7;
+  border-color: #59b659;
 }
 
-.curso:hover {
-  transform: scale(1.03);
+.course.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
